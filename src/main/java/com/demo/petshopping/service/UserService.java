@@ -1,5 +1,5 @@
 package com.demo.petshopping.service;
 
-public class UserService {
+public interface UserService {
 
 }
