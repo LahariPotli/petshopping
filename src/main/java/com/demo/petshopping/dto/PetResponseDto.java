@@ -1,22 +1,17 @@
-package com.demo.petshopping.model;
+package com.demo.petshopping.dto;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
 /**
- * Generates Pets table with petId,petName,price
  * @author Lahari_Reddy
  *
  */
 
-@Entity
-public class Pets {
-	@Id
-	@GeneratedValue(strategy = GenerationType.TABLE)
+public class PetResponseDto {
+	
 	private int petId;
 	private String petName;
+	private double price;
 	private String petColour;
+
 	public String getPetColour() {
 		return petColour;
 	}
@@ -24,8 +19,6 @@ public class Pets {
 	public void setPetColour(String petColour) {
 		this.petColour = petColour;
 	}
-
-	private double price;
 
 	public int getPetId() {
 		return petId;
