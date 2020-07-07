@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.3.1.RELEASE</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
 	<artifactId>petShopping</artifactId>
@@ -16,27 +17,34 @@
 
 	<properties>
 		<java.version>1.8</java.version>
-		<!--  <sonar.coverage.exclusions>
-        src/main/java/com/demo/bankaccountcreation/model/User.java
-       	src/main/java/com/demo/bankaccountcreation/model/Account.java
-       	src/main/java/com/demo/bankaccountcreation/model/CreditCard.java
-        src/main/java/com/demo/bankaccountcreation/dto/AccountType.java
-        src/main/java/com/demo/bankaccountcreation/dto/CreditCardType.java
-        src/main/java/com/demo/bankaccountcreation/dto/LoginDto.java
-        src/main/java/com/demo/bankaccountcreation/dto/LoginResponseDto.java
-        src/main/java/com/demo/bankaccountcreation/dao/CreditCardDao.java
-        src/main/java/com/demo/bankaccountcreation/dao/AccountDao.java
-        src/main/java/com/demo/bankaccountcreation/dao/UserDao.java
-        src/main/java/com/demo/bankaccountcreation/BankAccountCreationApplication.java
-        src/main/java/com/demo/bankaccountcreation/configuration/SwaggerConfig.java
-        src/main/java/com/demo/bankaccountcreation/exception/ExceptionController.java
-      	src/main/java/com/demo/bankaccountcreation/exception/ResourceNotFoundException.java
-      	src/main/java/com/demo/bankaccountcreation/service/AccountService.java
-      	src/main/java/com/demo/bankaccountcreation/service/CreditCardService.java
-      	src/main/java/com/demo/bankaccountcreation/service/UserService.java
-      	src/main/java/com/demo/bankaccountcreation/exception/ConstraintViolationException.java
-      	src/main/java/com/demo/bankaccountcreation/exception/ErrorResponse.java
-        </sonar.coverage.exclusions>-->
+		<sonar.coverage.exclusions>
+			src/main/java/com/demo/petshopping/model/Confirmation.java
+			src/main/java/com/demo/petshopping/model/Pets.java
+			src/main/java/com/demo/petshopping/model/User.java
+			src/main/java/com/demo/petshopping/dto/BookingResponseDto.java
+			src/main/java/com/demo/petshopping/dto/ConfirmationListResponseDto.java
+			src/main/java/com/demo/petshopping/dto/LoginDto.java
+			src/main/java/com/demo/petshopping/dto/LoginResponseDto.java
+			src/main/java/com/demo/petshopping/dto/OrderRequestDto.java
+			src/main/java/com/demo/petshopping/dto/PetListResponseDto.java
+			src/main/java/com/demo/petshopping/dto/PetResponseDto.java
+			src/main/java/com/demo/petshopping/dto/PurchaseListDto.java
+			src/main/java/com/demo/petshopping/exception/AlreadyPurchasedException.java
+			src/main/java/com/demo/petshopping/exception/ErrorResponse.java
+			src/main/java/com/demo/petshopping/exception/ExceptionController.java
+			src/main/java/com/demo/petshopping/exception/InvalidCredentialsException.java
+			src/main/java/com/demo/petshopping/exception/InvalidPetIdException.java
+			src/main/java/com/demo/petshopping/exception/InvalidUserIdException.java
+			src/main/java/com/demo/petshopping/exception/PetNotFoundException.java
+			src/main/java/com/demo/petshopping/exception/UserIdNotFoundException.java
+			src/main/java/com/demo/petshopping/configuration/SwaggerConfig.java
+			src/main/java/com/demo/petshopping/dao/ConfirmationDao.java
+			src/main/java/com/demo/petshopping/dao/PetsDao.java
+			src/main/java/com/demo/petshopping/dao/UserDao.java
+			src/main/java/com/demo/petshopping/service/ConfirmationService.java
+			src/main/java/com/demo/petshopping/service/PetService.java
+			src/main/java/com/demo/petshopping/service/UserService.java
+		</sonar.coverage.exclusions>
 	</properties>
 
 	<dependencies>

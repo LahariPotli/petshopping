@@ -6,7 +6,7 @@ package com.demo.petshopping.dto;
 
 public class PurchaseListDto {
 	 private String petName;
-	    private double Price;
+	    private double price;
 	    public String getPetName() {
 	        return petName;
 	    }
@@ -14,10 +14,11 @@ public class PurchaseListDto {
 	        this.petName = petName;
 	    }
 		public double getPrice() {
-			return Price;
+			return price;
 		}
 		public void setPrice(double price) {
-			Price = price;
+			this.price = price;
 		}
+		
 		
 }

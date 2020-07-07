@@ -3,7 +3,7 @@ package com.demo.petshopping.service;
 
 
 import com.demo.petshopping.dto.PetListResponseDto;
-;
+
 
 public interface PetService {
 	/**this method is used to get pets by petname

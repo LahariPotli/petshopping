@@ -34,7 +34,7 @@ public class ConfirmationController {
 	 * @return history of pet details by userid
 	 */
 	@GetMapping("/users/{userId}/confirmation")
-	public ResponseEntity<ConfirmationListResponseDto> PetDetails(@PathVariable("userId") Integer userId) {
+	public ResponseEntity<ConfirmationListResponseDto> petDetails(@PathVariable("userId") Integer userId) {
 		logger.info("Inside getpetdetails method in controller");
 		return new ResponseEntity<>(confirmationService.getPetsByUserId(userId), HttpStatus.OK);
 	}

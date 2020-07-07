@@ -30,7 +30,7 @@ public class SwaggerConfig {
 	
 
 	private ApiInfo apiInfo() {        
-    	// TODO Auto-generated method stub        
+    	      
     	return new ApiInfo("petshopping", "Pet Shopping system for pets RESTful api documentation", "1", "terms",                  
     			new Contact("Lahari", "www.petshopping.com", "support@pets.com"), "license number", "lecence url", Collections.emptyList());     
     }

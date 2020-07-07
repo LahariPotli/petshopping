@@ -70,8 +70,10 @@ public class ConfirmationServiceImpl implements ConfirmationService {
 		PurchaseListDto purchaseListDto = new PurchaseListDto();
 
 		Optional<Pets> pets = petsDao.findById(confirmation.getPetId());
-		if (!pets.isPresent())
+		if (!pets.isPresent()) {
 			return null;
+		}
+		
 		purchaseListDto.setPetName(pets.get().getPetName());
 		purchaseListDto.setPrice(pets.get().getPrice());
 
@@ -103,7 +105,12 @@ public class ConfirmationServiceImpl implements ConfirmationService {
 		confirmationDao.save(confirmation);
 
 		BookingResponseDto bookingResponseDto = new BookingResponseDto();
+		
 		Optional<Pets> pets = petsDao.findById(confirmation.getPetId());
+		if (!pets.isPresent()) {
+			return null;
+		}
+		
 		bookingResponseDto.setPetName(pets.get().getPetName());
 		bookingResponseDto.setPrice(pets.get().getPrice());
 		bookingResponseDto.setStatusCode(200);
